@@ -9,6 +9,8 @@ gem 'rails', '~> 6.1.6'
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
+# Use pundit for authorization
+gem 'pundit'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -31,6 +33,11 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+  gem 'rubocop', require: false # A Ruby static code analyzer and formatter
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
