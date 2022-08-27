@@ -34,6 +34,10 @@ gem 'devise'
 gem "devise-i18n"
 gem "devise-bootstrap5"
 
+# for alerts
+
+gem 'toastr-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -43,6 +47,8 @@ group :development, :test do
   gem 'rubocop-rspec', require: false
   gem 'shoulda-matchers', '~> 5.0'
   gem 'dotenv-rails'
+  # email viewer for dev
+  gem 'letter_opener'
 end
 
 group :development do

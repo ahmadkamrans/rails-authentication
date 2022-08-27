@@ -105,6 +105,10 @@ GEM
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     json (2.6.2)
+    launchy (2.5.0)
+      addressable (~> 2.7)
+    letter_opener (1.7.0)
+      launchy (~> 2.2)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -241,6 +245,8 @@ GEM
       sprockets (>= 3.0.0)
     thor (1.2.1)
     tilt (2.0.11)
+    toastr-rails (1.0.3)
+      railties (>= 3.1.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -283,6 +289,7 @@ DEPENDENCIES
   devise-i18n
   dotenv-rails
   jbuilder (~> 2.7)
+  letter_opener
   listen (~> 3.3)
   pg
   puma (~> 5.0)
@@ -297,6 +304,7 @@ DEPENDENCIES
   selenium-webdriver (>= 4.0.0.rc1)
   shoulda-matchers (~> 5.0)
   spring
+  toastr-rails
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
