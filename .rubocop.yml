@@ -1,0 +1,10 @@
+AllCops:
+  NewCops: enable
+Style/IfUnlessModifier:
+  Enabled: false
+Layout/LineLength:
+  Enabled: false
+Style/Lambda:
+  EnforcedStyle: literal
+Style/Documentation:
+  Enabled: false
