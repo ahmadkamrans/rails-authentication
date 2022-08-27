@@ -47,3 +47,9 @@ Use postgress
 
 ### ENV variables
 Use .env file for local development
+
+### Tests
+
+Run `rspec` for running tests
+for feature tests install chrome driver 
+`sudo apt-get install chromium-chromedriver`
