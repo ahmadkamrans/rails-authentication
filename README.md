@@ -41,3 +41,6 @@ bundle exec rubocop
 # once it's passing (this is a WIP at the moment)
 git push origin master
 ```
+
+#### Database
+Use postgress
