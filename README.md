@@ -44,3 +44,6 @@ git push origin master
 
 #### Database
 Use postgress
+
+### ENV variables
+Use .env file for local development
