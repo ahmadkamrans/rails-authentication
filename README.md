@@ -1,24 +1,43 @@
-# README
+### Start the dev enviroment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```bash
+bundle exec rails s
+```
 
-Things you may want to cover:
+### CSS Framework
 
-* Ruby version
+• The Bootstrap 5 framework
 
-* System dependencies
+### HTML Generation
 
-* Configuration
+Prefer erb.
 
-* Database creation
+### ENV, config, and credential storage
 
-* Database initialization
+TL;DR
 
-* How to run the test suite
+    `rails credentials:edit --environment development`
+    `rails credentials:edit --environment production`
+    `rails credentials:show --environment development`
+    `rails credentials:show --environment production`
 
-* Services (job queues, cache servers, search engines, etc.)
+### Pundit Authorization
 
-* Deployment instructions
+This site uses the pundit gem to authorize who can do what to each resource.
 
-* ...
+### Coding Standards/Practices
+
+Uee Rubocop for standard code practices.
+
+#### Rubocop and Metrics
+
+Run `bundle exec rubocop` before pushing commits to GitHub in order ensure the style
+and formatting of the code meets the project's requirements and any reformatting
+doesn't introduce new issues.  For example:
+
+```bash
+git commit -m "My nice commit Message Here"
+bundle exec rubocop
+# once it's passing (this is a WIP at the moment)
+git push origin master
+```
